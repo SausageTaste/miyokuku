@@ -1,10 +1,5 @@
 #pragma once
 
-#include <nlohmann/json_fwd.hpp>
+#include <nlohmann/json.hpp>
 
-
-namespace miyokuku {
-
-    using Json = nlohmann::json;
-
-}  // namespace miyokuku
+#include "miyokuku/json_fwd.hpp"
