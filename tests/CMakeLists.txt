@@ -1,0 +1,3 @@
+add_executable(miyokuku_test_argcheck argcheck.cpp)
+target_link_libraries(miyokuku_test_argcheck PRIVATE miyokuku)
+add_test(NAME miyokuku_test_argcheck COMMAND miyokuku_test_argcheck)

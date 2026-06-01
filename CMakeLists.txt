@@ -7,6 +7,8 @@ project(miyokuku
 
 include(FetchContent)
 
+set(MIYOKUKU_ENABLE_TESTS ON CACHE BOOL "Enable tests for miyokuku" FORCE)
+
 # Third-party libraries
 #-------------------------------------------------------------------------------
 
@@ -34,3 +36,8 @@ target_include_directories(miyokuku PUBLIC
 target_link_libraries(miyokuku PUBLIC
     nlohmann_json::nlohmann_json
 )
+
+if (MIYOKUKU_ENABLE_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
