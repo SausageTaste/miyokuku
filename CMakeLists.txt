@@ -25,6 +25,7 @@ endif()
 #-------------------------------------------------------------------------------
 
 add_library(miyokuku STATIC
+    src/argcheck.cpp
     src/json.cpp
 )
 
