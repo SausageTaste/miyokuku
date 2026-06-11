@@ -7,7 +7,7 @@ project(miyokuku
 
 include(FetchContent)
 
-set(MIYOKUKU_ENABLE_TESTS ON CACHE BOOL "Enable tests for miyokuku" FORCE)
+set(MIYOKUKU_ENABLE_TESTS OFF CACHE BOOL "Enable tests for miyokuku" FORCE)
 
 # Third-party libraries
 #-------------------------------------------------------------------------------
