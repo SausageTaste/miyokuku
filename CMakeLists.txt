@@ -16,7 +16,7 @@ if (NOT nlohmann_json::nlohmann_json)
     FetchContent_Declare(
         miyokuku_fetch_json
         GIT_REPOSITORY https://github.com/nlohmann/json.git
-        GIT_TAG v3.12.0
+        GIT_TAG v3.11.3
     )
     FetchContent_MakeAvailable(miyokuku_fetch_json)
 endif()
