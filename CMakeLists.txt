@@ -12,7 +12,7 @@ set(MIYOKUKU_ENABLE_TESTS OFF CACHE BOOL "Enable tests for miyokuku" FORCE)
 # Third-party libraries
 #-------------------------------------------------------------------------------
 
-if (NOT nlohmann_json::nlohmann_json)
+if (NOT TARGET nlohmann_json::nlohmann_json)
     FetchContent_Declare(
         miyokuku_fetch_json
         GIT_REPOSITORY https://github.com/nlohmann/json.git
